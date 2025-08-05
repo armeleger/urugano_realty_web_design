@@ -3,24 +3,101 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Property Details</title>
+  <title>Property Details - Urugano Realty</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Room Details</h1>
+    <nav>
+      <ul style="display: flex; list-style-type: none; justify-content: space-around; background-color: #333; padding: 10px;">
+        <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="listings.html" style="color: white; text-decoration: none;">Listings</a></li>
+        <li><a href="roomates.html" style="color: white; text-decoration: none;">Roommates</a></li>
+        <li><a href="login.html" style="color: white; text-decoration: none;">Login</a></li>
+        <li><a href="signup.html" style="color: white; text-decoration: none;">Sign Up</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <img src="assets/images/placeholder.jpg" alt="Room image" />
-    <h2>Single Room with Balcony</h2>
-    <p>Location: Gikondo, Kigali</p>
-    <p>RWF 120,000/month</p>
-    <p>Description: Spacious room with shared kitchen and bathroom.</p>
+  <main style="padding: 20px; max-width: 1000px; margin: 0 auto;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px;">
+      <div>
+        <img src="assets/images/placeholder.jpg" alt="Room image" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;" />
+      </div>
+      <div>
+        <h1>Single Room with Balcony</h1>
+        <p style="font-size: 1.2em; color: #666;">📍 Gikondo, Kigali</p>
+        <p style="font-size: 2em; color: #ff5a5f; font-weight: bold; margin: 20px 0;">RWF 120,000/month</p>
+        
+        <div style="margin: 20px 0;">
+          <h3>Property Features</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li>🛏️ Single bedroom</li>
+            <li>🚿 Shared bathroom</li>
+            <li>🍳 Shared kitchen</li>
+            <li>🌞 Private balcony</li>
+            <li>📶 Wi-Fi included</li>
+            <li>🚰 Water included</li>
+          </ul>
+        </div>
+        
+        <button style="background: #ff5a5f; color: white; border: none; padding: 15px 30px; border-radius: 5px; font-size: 1.1em; cursor: pointer; width: 100%;">Book Now</button>
+      </div>
+    </div>
+    
+    <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <h2>Description</h2>
+      <p style="line-height: 1.8; color: #555;">This spacious single room is perfect for students and young professionals. Located in the heart of Gikondo, you'll have easy access to public transportation, shops, and restaurants. The room comes with a private balcony where you can relax and enjoy the city views. You'll share a modern kitchen and clean bathroom with other friendly tenants.</p>
+      
+      <h3 style="margin-top: 30px;">Location Benefits</h3>
+      <ul style="color: #555; line-height: 1.8;">
+        <li>5 minutes walk to public transport</li>
+        <li>Close to grocery stores and markets</li>
+        <li>Safe and quiet neighborhood</li>
+        <li>20 minutes to city center</li>
+      </ul>
+      
+      <h3 style="margin-top: 30px;">House Rules</h3>
+      <ul style="color: #555; line-height: 1.8;">
+        <li>No smoking indoors</li>
+        <li>Quiet hours: 10 PM - 7 AM</li>
+        <li>Keep common areas clean</li>
+        <li>Maximum 2 guests at a time</li>
+      </ul>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Student Housing</p>
+  <footer style="background: #333; color: white; padding: 40px 20px; margin-top: 40px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
+      <div>
+        <h4>Company</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">About Us</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Careers</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Press</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Help Center</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Contact Us</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Safety Information</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Community</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Become a Host</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Referrals</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Gift Cards</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr style="margin: 30px 0; border: 1px solid #555;">
+    <p style="text-align: center;">&copy; 2025 Urugano Realty. All rights reserved.</p>
   </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

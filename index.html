@@ -8,16 +8,92 @@
 </head>
 <body>
   <header>
-    <!-- TODO: Include navbar here -->
-    <h1>Welcome to Student Housing</h1>
+    <nav>
+      <ul style="display: flex; list-style-type: none; justify-content: space-around; background-color: #333; padding: 10px;">
+        <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="listings.html" style="color: white; text-decoration: none;">Listings</a></li>
+        <li><a href="roomates.html" style="color: white; text-decoration: none;">Roommates</a></li>
+        <li><a href="login.html" style="color: white; text-decoration: none;">Login</a></li>
+        <li><a href="signup.html" style="color: white; text-decoration: none;">Sign Up</a></li>
+      </ul>
+    </nav>
+  <section id="hero" style="background-image: url('assets/images/hero.jpg'); height: 600px; background-size: cover; text-align: center; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h1 style="font-size: 3em; margin-bottom: 20px;">Find your perfect stay</h1>
+    <p style="font-size: 1.2em; margin-bottom: 30px;">Discover amazing places to stay, unique experiences, and more</p>
+    <div class="search-form" style="background: white; padding: 20px; border-radius: 10px; display: flex; gap: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+      <input type="text" placeholder="Where are you going?" style="padding: 15px; border: 1px solid #ddd; border-radius: 5px; font-size: 1em; min-width: 200px; color: #333;">
+      <input type="date" style="padding: 15px; border: 1px solid #ddd; border-radius: 5px; font-size: 1em; color: #333;">
+      <input type="date" style="padding: 15px; border: 1px solid #ddd; border-radius: 5px; font-size: 1em; color: #333;">
+      <select style="padding: 15px; border: 1px solid #ddd; border-radius: 5px; font-size: 1em; color: #333;">
+        <option>1 Guest</option>
+        <option>2 Guests</option>
+        <option>3 Guests</option>
+        <option>4+ Guests</option>
+      </select>
+      <button style="background: #ff5a5f; color: white; border: none; padding: 15px 30px; border-radius: 5px; font-size: 1em; cursor: pointer;">Search</button>
+    </div>
+  </section>
   </header>
 
-  <main>
-    <p>Find affordable student homes and roommates.</p>
+  <main style="padding: 20px;">
+    <h2>Best Listings</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+      <a href="property.html" style="text-decoration: none; color: inherit;">
+        <div class="listing-card" style="background: white; padding: 20px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <img src="assets/images/property1.jpg" alt="Property 1" style="width: 100%; border-radius: 5px 5px 0 0;">
+          <h3>Cozy Apartment</h3>
+          <p>Located in the heart of the city</p>
+          <p style="color: #ff5a5f; font-weight: bold;">$120/night</p>
+        </div>
+      </a>
+      <a href="property.html" style="text-decoration: none; color: inherit;">
+        <div class="listing-card" style="background: white; padding: 20px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <img src="assets/images/property2.jpg" alt="Property 2" style="width: 100%; border-radius: 5px 5px 0 0;">
+          <h3>Modern Condo</h3>
+          <p>With stunning views</p>
+          <p style="color: #ff5a5f; font-weight: bold;">$85/night</p>
+        </div>
+      </a>
+      <a href="property.html" style="text-decoration: none; color: inherit;">
+        <div class="listing-card" style="background: white; padding: 20px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <img src="assets/images/property3.jpg" alt="Property 3" style="width: 100%; border-radius: 5px 5px 0 0;">
+          <h3>Beach Villa</h3>
+          <p>Perfect for family vacations</p>
+          <p style="color: #ff5a5f; font-weight: bold;">$200/night</p>
+        </div>
+      </a>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Student Housing</p>
+  <footer style="background: #333; color: white; padding: 40px 20px; margin-top: 40px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
+      <div>
+        <h4>Company</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">About Us</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Careers</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Press</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Help Center</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Contact Us</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Safety Information</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Community</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Become a Host</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Referrals</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Gift Cards</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr style="margin: 30px 0; border: 1px solid #555;">
+    <p style="text-align: center;">&copy; 2025 Urugano Realty. All rights reserved.</p>
   </footer>
 
   <script src="assets/js/main.js"></script>
